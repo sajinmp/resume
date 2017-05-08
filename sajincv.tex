@@ -1,0 +1,168 @@
+%%%%%%
+% sajinmp - resume
+% Uses LaTeX and moderncv
+%%%%%%
+
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[blue]{classic}
+
+\usepackage[utf8]{inputenc} % character encoding
+\usepackage[scale=0.8]{geometry} % adjust the page margins
+
+\AtBeginDocument{\setlength{\maketitlenamewidth}{10cm}}
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Sajin}
+\familyname{M Prasad}
+\title{Resume}
+\address{Karthika, Koratty South P O\\Thrissur - 680308}{Kerala, India}
+\mobile{+91-9745165109}
+\email{sajinprasadkm@gmail.com}
+\homepage{sajinmp.in}
+\extrainfo{IRC nick: sajinmp\\Github: sajinmp}
+
+% --------------------------------------
+% CONTENT
+% --------------------------------------
+
+\begin{document}
+\maketitle
+
+\section{Technical skills}
+\cvcomputer
+{\textbf{Operating Systems}}{Gnu/Linux}
+{\textbf{Programming Languages}}{Ruby, HTML/CSS, JS, CoffeeScript}
+\cvcomputer
+{\textbf{Development Tools}}{vim, git, bash, sublime}
+{\textbf{Frameworks}}{Rails, Jekyll, jQuery, Bootstrap, Node/Express(beginner)}
+\cvcomputer
+{\textbf{Others}}{\LaTeX, MySQL, PostgresQL, \\MongoDB, DevOps}
+{}{}
+
+% --------------------------------------
+% WORK EX
+% --------------------------------------
+
+\section{Work Experience and Positions}
+
+\cventry{November 2016 -- Present}{foOfys Solutions}{Tech Lead}{http://foofys.com}{}{Managing the tech team and also taking care of the project lifecycle which includes development and deployment.}
+\cventry{March 2016 -- September 2016}{foOfys Solutions}{Senior Developer}{http://foofys.com}{}{Responsible for the development and deployment of various projects.}
+\cventry{July 2015 -- January 2016}{Chergo E-Commerce Pvt. Ltd.}{Software Developer}{http://coursemantra.com}{}{Designed and implemented solutions for the flagship product CourseMantra and Vargoose while taking care of its DevOps, scalability and security}
+\cventry{March 2012 -- December 2012}{Bang The Table}{Application Tester}{http://bangthetable.com}{}{Worked with the QA team and made sure that the applications developed by Bang The Table work properly in as many browser/operating system permutations as possible.}
+
+
+
+% --------------------------------------
+% PROJECTS
+% --------------------------------------
+
+%\pagebreak
+\section{Projects}
+
+\subsection{Work}
+
+\cvlistitem
+{\textbf{Dooble - Earn Talktime} -- \\ {\small \href{https://play.google.com/store/apps/details?id=com.androidapp.dooble\&hl=en}{https://play.google.com/store/apps/details?id=com.androidapp.dooble\&hl=en}}  
+  \\The API for the Dooble android app.
+}
+
+\cvlistitem
+{\textbf{SyMetric} -- {\small \href{http://symetricsystems.com}{http://symetricsystems.com}}  
+  \\The website of Symetric Systems.
+}
+
+\cvlistitem
+{\textbf{HopWit.me} -- {\small \href{https://hopwit.me}{https://hopwit.me}}  
+  \\The website of hopwit.me.
+}
+
+\cvlistitem
+{\textbf{Talocity} -- {\small \href{https://talocity.in}{https://talocity.in}}  
+  \\The web portal and APIs of a talent stock exchange Talocity.
+}
+
+\cvlistitem
+{\textbf{Xides} -- {\small \href{http://xides.in}{http://xides.in}}
+  \\The web portal of the design team from foOfys named Xides.
+}
+
+\cvlistitem
+{\textbf{MakeMyCanvas} -- {\small \href{http://makemycanvas.com}{http://makemycanvas.com}}
+  \\A web portal for a company which paints the images you upload.
+}
+
+\cvlistitem
+{\textbf{MyPr} -- {\small \href{http://mypr.io}{http://mypr.io}}
+  \\A PR tool for Unspun Marketing.
+}
+
+\cvlistitem
+{\textbf{ChalkNPaper} -- {\small \href{http://chalknpaper.com}{http://chalknpaper.com}}
+  \\The web portal of chalk n paper.
+}
+
+\cvlistitem
+{\textbf{Indian Film Information} -- {\small \href{http://indianfilminformation.com}{http://indianfilminformation.com}}
+  \\The web portal of indian film information.
+}
+
+\cvlistitem
+{\textbf{CourseMantra} -- {\small \href{https://coursemantra.com}{https://coursemantra.com}}
+  \\An online education marketplace and test preparation platform.
+}
+
+\cvlistitem
+{\textbf{Fillam} -- {\small \href{http://www.fillam.in}{http://www.fillam.in}}
+  \\A movie and book review portal for entertainment.
+}
+
+
+\subsection{Hobby}
+
+\cvlistitem
+{\textbf{Vimeo Upload Gem} -- {\small \href{https://rubygems.org/gems/vimeo\_upload}{https://rubygems.org/gems/vimeo\_upload}}
+  \\Developed a gem for uploading video to vimeo.
+}
+
+\cvlistitem
+{\textbf{Gooday - Spread a smile campaign} -- {\small \href{http://britannia.herokuapp.com}{http://britannia.herokuapp.com}}
+  \\A single page web site which is developed as part of spread a smile campaign by\\
+  Goodday. It posts the message you have entered to twitter after adding it to an\\
+  image.
+}
+
+\cvlistitem
+{\textbf{Opinia} -- {\small \href{https://github.com/sajinmp/opinia}{https://github.com/sajinmp/opinia}}
+  \\A mini online community engagement platform.
+}
+
+
+
+% --------------------------------------
+% TALKS ETC.
+% --------------------------------------
+
+\section{Talks and Workshops}
+\cventry{May 2016}{Why side projects fail?}{foOfys Solutions}{}{}
+{Gave a talk on why side projects fail?}
+\cventry{August 2014}{Git Version Control System}{Palakkad Institue of Science and Technology}{}{}
+{Led an introductory workshop on Git version control system for final year students} 
+
+% --------------------------------------
+% ACHIEVEMENTS
+% --------------------------------------
+
+\section{Achievements}
+
+\cventry{February 2014}{C Coding}{Laqshya Tech Fest}{Naipunya Institute of Management and Information Technology}{}
+{Won Second prize in National Level C Coding competition conducted as part of Laqshya fest.}
+
+\cventry{February 2012}{Scriptaculous}{Conjura Tech Fest}{TKM College of Engineering, Kollam}{}
+{Won First prize in National Level Shell Scripting competition conducted as part of Conjura Tech Fest}
+
+
+%------------------------------------------
+
+
+\end{document}
