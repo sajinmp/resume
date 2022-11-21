@@ -16,11 +16,11 @@
 \firstname{Sajin}
 \familyname{M Prasad}
 \title{Resume}
-\address{Karthika, Koratty South P O\\Thrissur - 680308}{Kerala, India}
+\address{Karthika, Koratty South P O\\Thrissur, Kerala, India}{ - 680308}
 \mobile{+91-9745165109}
 \email{sajinprasadkm@gmail.com}
 \homepage{sajinmp.com}
-\extrainfo{IRC nick: sajinmp\\Github: sajinmp\\StackOverflow: sajinmp}
+\extrainfo{Github: \href{https://github.com/sajinmp}{sajinmp}}
 
 % --------------------------------------
 % CONTENT
@@ -31,14 +31,11 @@
 
 \section{Technical skills}
 \cvcomputer
-{\textbf{Operating Systems}}{Gnu/Linux}
-{\textbf{Programming Languages}}{Ruby, HTML/CSS, JS, CoffeeScript}
+{\textbf{Languages}}{Ruby, Python, JavaScript, HTML/CSS/Haml/SaSS, Liquid, Bash}
+{\textbf{Frameworks}}{Ruby on Rails, Jekyll, jQuery\\Bootstrap}
 \cvcomputer
-{\textbf{Development Tools}}{vim, git, bash, sublime}
-{\textbf{Frameworks}}{Rails, Jekyll, jQuery, Bootstrap}
-\cvcomputer
-{\textbf{Others}}{\LaTeX, MySQL, PostgresQL, \\MongoDB, Docker, AWS}
-{}{}
+{\textbf{DevOps}}{AWS, Heroku, Digital Ocean, Docker}
+{\textbf{Software Packages}}{PostgreSQL, MySQL, \LaTeX\\MongoDB, ElasticSearch}
 
 % --------------------------------------
 % WORK EX
@@ -46,12 +43,76 @@
 
 \section{Work Experience and Positions}
 
-\cventry{May 2019 -- Present}{Commutatus}{Senior Engineer}{https://commutatus.com}{}{Responsible for the development and management of various projects in Commutatus.}
-\cventry{August 2017 -- March 2019}{TongueStun Food Network Pvt. Ltd (Acquired by Zomato)}{Senior Engineer}{https://tonguestun.com}{}{Responsible for the development and management of flagship product e2z along with its supporting applications.}
-\cventry{November 2016 -- July 2017}{foOfys Solutions}{Tech Lead}{http://foofys.com}{}{Managing the tech team and also taking care of the project lifecycle which includes development and deployment.}
-\cventry{March 2016 -- September 2016}{foOfys Solutions}{Senior Developer}{http://foofys.com}{}{Responsible for the development and deployment of various projects.}
-\cventry{July 2015 -- January 2016}{Chergo E-Commerce Pvt. Ltd.}{Software Developer}{http://coursemantra.com}{}{Designed and implemented solutions for the flagship product CourseMantra and Vargoose while taking care of its DevOps, scalability and security}
-\cventry{March 2012 -- December 2012}{Bang The Table}{Application Tester}{http://bangthetable.com}{}{Worked with the QA team and made sure that the applications developed by Bang The Table work properly in as many browser/operating system permutations as possible.}
+\cventry{May 2021 -- Present}{Back-end \& Site Reliability Engineer}{The Mobility Methods LLC}{https://jen.health}{}{Lead of the team. Designed and built the flagship product Jen Health while taking care of its DevOps and scalability.\\%
+    \begin{itemize}\setlength\itemindent{10pt}
+       \item {\textbf{Jen.Health} -- {\small \href{https://jen.health}{https://jen.health}}
+       \vspace{5pt}
+       \newline
+       {Jen health helps you improve your mobility, reduce pain and build strength with knowledge \& exercises from experienced doctors of physical therapy.}%
+       \vspace{5pt}
+           \begin{itemize}\setlength\itemindent{10pt}
+               \item[-] Designed and implemented the entire back-end and internal management platform
+               \item[-] Setup the video conversion and streaming infrastructure
+               \item[-] Built solution for tracking video playback and history
+               \item[-] Setup postgresql full text search to rank and categorize videos
+           \end{itemize}
+       }
+    \end{itemize}
+}
+\vspace{10pt}
+\cventry{May 2019 -- Apr 2021}{Senior Engineer}{Commutatus}{https://commutatus.com}{}{Designed and implemented solutions for projects from various clients of Commutatus along with handling the infrastructure.\\%
+    \begin{itemize}\setlength\itemindent{10pt}
+       \item {\textbf{AIESEC} -- {\small \href{https://aiesec.org}{https://aiesec.org}}
+       \vspace{5pt}
+       \newline
+       {AIESEC is an international youth-run, non-governmental and not-for-profit organization that provides young people with leadership development, cross-cultural internships, and global volunteer exchange experiences.}%
+       \vspace{5pt}
+           \begin{itemize}\setlength\itemindent{10pt}
+               \item[-] Moved the application to AWS Fargate and database from AWS RDS to AWS Aurora
+               \item[-] Added tests. Improved CI/CD to run tests and notify monitoring system of deployment
+               \item[-] Migrated the application to jruby. Upgraded graphql, elasticsearch and docker
+               \item[-] Tuned the application performance and reduced database size by 10\%
+           \end{itemize}
+       }
+       \vspace{10pt}
+       \item {\textbf{MentorMind} -- {\small \href{https://mentormind.in}{https://mentormind.in}}
+       \vspace{5pt}
+       \newline
+       {MentorMind offers virtual, mentored work experiences that are co-created with top companies to help you build real skills in careers of your choice.}%
+       \vspace{5pt}
+           \begin{itemize}\setlength\itemindent{10pt}
+               \item[-] Improved the application performance and code structure
+               \item[-] Improved CI/CD pipeline to notify monitoring system of deployment
+           \end{itemize}
+       }
+    \end{itemize}
+}
+\vspace{10pt}
+\cventry{Aug 2017 -- Mar 2019}{Senior Engineer}{TongueStun Food Network Pvt. Ltd (Acquired by Zomato)}{https://tonguestun.com}{}{Designed and implemented solutions for flagship product e2z (now Food@Work). Developed and built other supporting applications which form the e2z ecosystem.\\%
+    \begin{itemize}\setlength\itemindent{10pt}
+       \item {\textbf{E2z (now Food@work)} -- {\small \href{https://play.google.com/store/apps/details?id=com.tonguestun.order}{https://play.google.com/apps?id=com.tonguestun.order}}
+       \vspace{5pt}
+       \newline
+       {E2z is the flagship product of Tonguestun aiming at digitizing cafeterias by connecting food vendors to companies. This app is for the employees of the company to order food from the vendors in their company cafeteria. The e2z ecosystem consists of various applications which caters to providing a great cafeteria experience.}%
+       \vspace{5pt}
+           \begin{itemize}\setlength\itemindent{10pt}
+               \item[-] Moved from monolith to micro-services
+               \item[-] Experimented and built an option to order offline via app for when internet is slow
+               \item[-] Came up with a fraud detection system
+               \item[-] Setup a service for generating various types of reports based on transaction data
+               \item[-] Brainstormed and came up with an idea for a finance dashboard to track and process vendor payments easier and automated
+           \end{itemize}
+       }
+    \end{itemize}
+}
+\vspace{10pt}
+\cventry{Nov 2016 -- Jul 2017}{Tech Lead}{foOfys Solutions}{https://foofys.com}{}{Headed the tech team. Designed and built solutions and managed projects for various clients of foOfys.}
+\vspace{10pt}
+\cventry{Mar 2016 -- Oct 2016}{Senior Developer}{foOfys Solutions}{https://foofys.com}{}{Designed and built solutions for projects from various clients of foOfys.}
+\vspace{10pt}
+\cventry{Jul 2015 -- Jan 2016}{Software Developer}{Chergo E-Commerce Pvt. Ltd.}{https://coursemantra.com}{}{Designed and implemented solutions for the flagship product CourseMantra while taking care of its DevOps, scalability and security.}
+\vspace{10pt}
+\cventry{Mar 2012 -- Dec 2012}{Application Tester}{Bang The Table}{https://bangthetable.com}{}{Worked with the QA team and made sure that the applications developed by Bang The Table work properly in as many browser/operating system permutations as possible.}
 
 
 
@@ -60,78 +121,70 @@
 % --------------------------------------
 
 %\pagebreak
-\section{Projects}
-
-\subsection{Work}
+\section{Open Source Contributions}
 
 \cvlistitem
-{\textbf{AIESEC} -- {\small \href{https://aiesec.org}{https://aiesec.org}}
-  \\AIESEC is an international youth-run, non-governmental and not-for-profit organization which is being used in 125+ countries.
+{\textbf{Spotlight Search} -- {\small \href{https://github.com/commutatus/spotlight-search}{https://github.com/commutatus/spotlight-search}}
+  \\Ruby gem that helps in filtering, sorting and exporting tables easier.
 }
 
+\vspace{5pt}
+
 \cvlistitem
-{\textbf{Mentormind} -- {\small \href{https://mentormind.in}{https://mentormind.in}}
-  \\MentorMind is an online platform that offers real-time projects which will later be certified by the respective company.
+{\textbf{Vimeo Upload} -- {\small \href{https://rubygems.org/gems/vimeo\_upload}{https://rubygems.org/gems/vimeo\_upload}}
+  \\Ruby gem for uploading video to vimeo.
 }
 
+% --------------------------------------
+% Hobby projects
+% --------------------------------------
+
+\section{Pet Projects}
+
 \cvlistitem
-{\textbf{E2z} -- {\small \href{https://play.google.com/store/apps/details?id=com.tonguestun.order}{https://play.google.com/store/apps/details?id=com.tonguestun.order}}
-  \\App for corporate employees to order food from cafeteria.
+{\textbf{Holy Matha Academy App} -- {\small \href{https://play.google.com/store/apps/details?id=com.holymathamobileapp}{https://play.google.com/apps?id=com.holymathamobileapp}} (Terminated)
+  \\Built an app for students of a friend's academy to play the video recordings during the time of Covid-19.
 }
 
+\vspace{5pt}
+
 \cvlistitem
-{\textbf{E2z Web} -- {\small \href{https://order.e2z.co.in}{https://order.e2z.co.in}}
-  \\Web application for e2z app.
+{\textbf{Nerdzz} -- {\small \href{https://nerdzz.in}{https://nerdzz.in}} (Terminated)
+  \\Founded Nerdzz to help students in campus learn the skills which would make them job ready, thereby solving the problem of finding new talent for the firm during the time.
 }
 
+\vspace{5pt}
+
 \cvlistitem
-{\textbf{E2z Chef} -- {\small \href{https://play.google.com/store/apps/details?id=com.tonguestun.vendorapp}{https://play.google.com/store/apps/details?id=com.tonguestun.vendorapp}}
-  \\App for the caterer to manage orders from e2z.
+{\textbf{GoodDay - Spread a smile campaign} -- {\small \href{https://britannia.herokuapp.com}{https://britannia.herokuapp.com}}
+  \\One-page website that posts to twitter, built during the spread a smile campaign by Britannia.
 }
 
-\cvlistitem
-{\textbf{Woovly} -- {\small \href{http://woovly.com/}{http://woovly.com/}}
-  \\A platform that helps you plan, explore and accomplish your bucket list.
-}
-
-\cvlistitem
-{\textbf{SyMetric} -- {\small \href{http://symetricsystems.com}{http://symetricsystems.com}}
-  \\The website of Symetric Systems.
-}
-
-\cvlistitem
-{\textbf{Talocity} -- {\small \href{https://talocity.in}{https://talocity.in}}
-  \\The web portal and APIs of a talent stock exchange Talocity.
-}
-
-\cvlistitem
-{\textbf{MyPr} -- {\small \href{http://mypr.io}{http://mypr.io}}
-  \\A PR tool for Unspun Marketing.
-}
-
-\cvlistitem
-{\textbf{And more} -- {\small \href{https://sajinmp.com/projects}{https://sajinmp.com/projects}}}
-
-
-\subsection{Hobby}
-
-\cvlistitem
-{\textbf{Vimeo Upload Gem} -- {\small \href{https://rubygems.org/gems/vimeo\_upload}{https://rubygems.org/gems/vimeo\_upload}}
-  \\Developed a gem for uploading video to vimeo.
-}
-
+\break
 
 % --------------------------------------
 % TALKS ETC.
 % --------------------------------------
 
 \section{Talks and Workshops}
-\cventry{June 2019}{Why side projects fail?}{Commutatus}{}{}
-{Gave a talk on why side projects fail?}
+\cventry{Jun 2019}{Why side projects fail?}{Commutatus}{}{Credit: \href{https://blog.revathskumar.com/p/about-me.html}{Revath S Kumar}}
+{Gave a talk on why side projects fail.}
 \cventry{May 2016}{Why side projects fail?}{foOfys Solutions}{}{}
-{Gave a talk on why side projects fail?}
-\cventry{August 2014}{Git Version Control System}{Palakkad Institue of Science and Technology}{}{}
-{Led an introductory workshop on Git version control system for final year students} 
+{Gave a talk on why side projects fail.}
+\cventry{Aug 2014}{Git Version Control System}{Palakkad Institue of Science and Technology}{}{}
+{Led an introductory workshop on Git version control system for final year students.}
+
+
+% --------------------------------------
+% Achievements ETC.
+% --------------------------------------
+
+\section{Achievements}
+\cventry{Feb 2014}{C Coding}{Naipunya Institute of Management and Information
+Technology}{Thrissur}{}
+{Won second prize in national level C coding competition conducted as a part of Laqshya tech fest.}
+\cventry{Feb 2012}{Shell Scripting Contest - Scriptaculous}{TKM College of Engineering}{Kollam}{}
+{Won first prize in national level Shell scripting competition conducted as a part of Conjura tech fest.}
 
 %------------------------------------------
 
