@@ -1,0 +1,397 @@
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+%% AltaCV uses the fontawesome5 and simpleicons packages.
+%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/simpleicons for full list of symbols.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+% WHEN COMPILING WITH XELATEX PLEASE USE
+% xelatex -shell-escape -output-driver="xdvipdfmx -z 0" sample.tex
+\iftutex 
+  % If using xelatex or lualatex:
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  % If using pdflatex:
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  % \usepackage{sourcesanspro}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+% Change the colours if you want to
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+% ...and the markers for the date/location for \cvevent
+% \renewcommand{\cvDateMarker}{\faCalendar*[regular]}
+% \renewcommand{\cvLocationMarker}{\faMapMarker*}
+
+
+% If your CV/résumé is in a language other than English,
+% then you probably want to change these so that when you
+% copy-paste from the PDF or run pdftotext, the location
+% and date marker icons for \cvevent will paste as correct
+% translations. For example Spanish:
+% \renewcommand{\locationname}{Ubicación}
+% \renewcommand{\datename}{Fecha}
+
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want to use an author-year reference style like APA(6)
+%% for your publication list
+% \input{pubs-authoryear.tex}
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want an originally numerical reference style like IEEE
+%% for your publication list
+\input{pubs-num.tex}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+% \usepackage{academicons}\let\faOrcid\aiOrcid
+\begin{document}
+\name{Sajin M Prasad}
+\tagline{Resume}
+%% You can add multiple photos on the left or right
+\photoR{2.8cm}{me_pro}
+% \photoL{2.5cm}{Yacht_High,Suitcase_High}
+
+\personalinfo{%
+  % Not all of these are required!
+  \email{sajinprasadkm@gmail.com}
+  \phone{+971565232714}
+  \location{Fujairah, UAE}
+  \homepage{https://sajinmp.com}
+  % \twitter{@twitterhandle}
+  \linkedin{sajinmp}
+  \github{sajinmp}
+  \printinfo{\faStackOverflow}{sajinmp}[https://stackoverflow.com/users/1713555/sajinmp]
+  %% You can add your own arbitrary detail with
+  %% \printinfo{symbol}{detail}[optional hyperlink prefix]
+  % \printinfo{\faPaw}{Hey ho!}[https://example.com/]
+
+  %% Or you can declare your own field with
+  %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
+  % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
+  % \gitlab{your_id}
+  %%
+  %% For services and platforms like Mastodon where there isn't a
+  %% straightforward relation between the user ID/nickname and the hyperlink,
+  %% you can use \printinfo directly e.g.
+  % \printinfo{\faMastodon}{@username@instace}[https://instance.url/@username]
+  %% But if you absolutely want to create new dedicated info fields for
+  %% such platforms, then use \NewInfoField* with a star:
+  % \NewInfoField*{mastodon}{\faMastodon}
+  %% then you can use \mastodon, with TWO arguments where the 2nd argument is
+  %% the full hyperlink.
+  % \mastodon{@username@instance}{https://instance.url/@username}
+}
+
+\makecvheader
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.6}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+\cvsection{Summary}
+Experienced Software Engineer with 10+ years of expertise in backend development, cloud infrastructure, and DevOps. Specialized in Ruby on Rails, with a proven track record of designing, building, and scaling production-grade applications. Extensive experience with AWS services, including EC2, ECS (Fargate), RDS, Lambda, CloudFront, and API Gateway. Strong background in Docker, and infrastructure automation, with deep expertise in backend performance, security, and scalability. Passionate about building robust, high-performance systems, optimizing cloud infrastructure, and leading technical teams.
+
+\vspace{10pt}
+\begin{itemize}
+    \setlength\itemsep{5pt}
+    \item \textbf{Backend \& Infrastructure Expert}: Designed and deployed highly scalable applications.
+    \item \textbf{DevOps \& Cloud Specialist}: 8+ years in AWS, Docker, CI/CD, and infrastructure automation.
+    \item \textbf{Database Proficiency}: Expert in PostgreSQL, MySQL, MongoDB, and SQLite with hands-on performance tuning.
+    \item \textbf{Scalability \& Performance}: Built and optimized highly available, secure, and scalable platforms.
+    \item \textbf{Leadership \& Collaboration}: Led teams, defined system architectures, and integrated third-party services.
+    
+\end{itemize}
+
+\cvsection{Experience}
+
+\cvevent{Lead Engineer}{\href{https://jen.health}{The Mobility Methods LLC (Jen Health)}}{May 2021 -- July 2024}{Remote/California}
+%\vspace{10pt}
+\begin{itemize}
+    \item[-] Founding Engineer, built the entire backend architecture and internal systems of Jen Health from the ground up.
+    \item[-] Designed and developed a scalable, high-performance API using Ruby on Rails, ensuring smooth integration across web, iOS, and Android apps.
+    \item[-] Architected and managed cloud infrastructure on AWS, ensuring security, high availability, and cost efficiency.
+    \item[-] Scaled the platform to support 7-figure ARR growth while maintaining high uptime and performance
+    \item[-] Integrated third-party services for payments, messaging, analytics, and automation to enhance the Jen Health ecosystem.
+    \item[-] Monitored system performance, security, and reliability, proactively resolving production issues.
+    \item[-] Collaborated closely with the product, design, and engineering teams from Day 0, influencing key technical and architectural decisions.
+    \item[-] Built internal tools and analytics pipelines to improve operational efficiency and user insights.
+\end{itemize}
+
+\break
+
+\cvevent{Senior Engineer}{\href{https://commutatus.com}{Commutatus}}{May 2019 -- Apr 2021}{Remote/Chennai}
+\begin{itemize}
+    \item[-] Led backend optimization and cloud migration for large-scale applications.
+    \item[-] Migrated AIESEC’s platform to AWS ECS (Fargate) \& Aurora, improving performance and reducing costs.
+    \item[-] Optimized CI/CD pipelines, improving deployment efficiency and test coverage.
+    \item[-] Transitioned REST APIs to GraphQL, increasing API efficiency and flexibility.
+    \item[-] Enhanced system performance by 15\% and reduced database size by 20\%.
+\end{itemize}
+
+\divider
+
+\cvevent{Senior Engineer}{\href{https://tonguestun.com}{TongueStun Food Network Pvt. Ltd. (Acquired by Zomato)}}{Aug 2017 -- Mar 2019}{Bangalore}
+\begin{itemize}
+    \item[-] Key contributor in transforming TongueStun from a tech-enabled business to a fully tech-driven company
+    \item[-] Designed and built multiple applications from scratch to digitize office cafeterias for IBM, Accenture, and other enterprises.
+    \item[-] Migrated the platform from a monolithic architecture to microservices, significantly improving scalability and performance.
+    \item[-] Developed and optimized the systems, scaling the platform from 5,000 to 120,000 daily transactions within months.
+    \item[-] Built dashboards and internal tools for finance, support, and operations teams, improving data visibility and decision-making.
+    \item[-] Created an offline ordering system, ensuring seamless functionality in low-connectivity environments.
+    \item[-] Played a critical role in scaling the business, which led to TongueStun’s \$18M acquisition by Zomato and rebranding as Food@Work.
+\end{itemize}
+
+\divider
+
+\cvevent{Tech Lead}{\href{https://foofys.com}{Foofys Solutions}}{Mar 2016 -- Jul 2017}{Bangalore}
+\begin{itemize}
+    \item[-] Promoted from Senior Developer to Tech Lead on Nov 2016, leading the development and delivery of multiple client projects from planning to deployment.
+    \item[-] Designed and managed infrastructure and cloud resources.
+    \item[-] Mentored junior developers, provided technical guidance, and participated in hiring decisions.
+\end{itemize}
+
+\divider
+
+\cvevent{Software Developer}{\href{https://coursemantra.com}{Chergo E-Commerce Pvt. Ltd.}}{Jul 2015 -- Jan 2016}{Bangalore}
+Sole developer of CourseMantra, designing and building the entire e-learning and test-preparation platform.
+
+\divider
+
+\cvevent{Application Tester (Part-time)}{\href{https://bangthetable.com}{Bang The Table}}{Mar 2012 -- Dec 2012}{Remote/Bangalore}
+Conducted cross-browser and OS compatibility testing, ensuring product reliability.
+
+% \medskip
+
+% \cvsection{A Day of My Life}
+
+% % Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% % \wheelchart{outer radius}{inner radius}{
+% % comma-separated list of value/text width/color/detail}
+% \wheelchart{1.5cm}{0.5cm}{%
+%   6/8em/accent!30/{Sleep,\\beautiful sleep},
+%   3/8em/accent!40/Hopeful novelist by night,
+%   8/8em/accent!60/Daytime job,
+%   2/10em/accent/Sports and relaxation,
+%   5/6em/accent!20/Spending time with family
+% }
+
+% use ONLY \newpage if you want to force a page break for
+% ONLY the current column
+% \newpage
+
+% \cvsection{Publications}
+
+% %% Specify your last name(s) and first name(s) as given in the .bib to automatically bold your own name in the publications list.
+% %% One caveat: You need to write \bibnamedelima where there's a space in your name for this to work properly; or write \bibnamedelimi if you use initials in the .bib
+% %% You can specify multiple names, especially if you have changed your name or if you need to highlight multiple authors.
+% \mynames{Lim/Lian\bibnamedelima Tze,
+%   Wong/Lian\bibnamedelima Tze,
+%   Lim/Tracy,
+%   Lim/L.\bibnamedelimi T.}
+% %% MAKE SURE THERE IS NO SPACE AFTER THE FINAL NAME IN YOUR \mynames LIST
+
+% \nocite{*}
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faFile*[regular]}{Journal Articles}},type=article]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Conference Proceedings}},type=inproceedings]
+
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+\switchcolumn
+
+\cvsection{Technical Skills}
+\cvsubsection{Languages}
+\cvtag{Ruby}
+\cvtag{Bash}
+\cvtag{JavaScript}
+\cvtag{Python}
+\cvtag{HTML/CSS/Haml/SaSS}
+\cvtag{Liquid}
+
+\vspace{10pt}
+\cvsubsection{Frameworks}
+\cvtag{Ruby on Rails}
+\cvtag{jQuery}
+\cvtag{Jekyll}
+\cvtag{Bootstrap}
+\cvtag{Express.js}
+\cvtag{PyQt6}
+
+\vspace{10pt}
+\cvsubsection{Databases}
+\cvtag{PostgreSQL}
+\cvtag{MySQL}
+\cvtag{MongoDB}
+\cvtag{SQLite}
+
+\vspace{10pt}
+\cvsubsection{Cloud Providers}
+\cvtag{AWS}
+\cvtag{GCP}
+\cvtag{Heroku}
+\cvtag{DigitalOcean}
+
+\vspace{10pt}
+\cvsubsection{DevOps}
+\cvtag{Docker}
+\cvtag{Github Actions}
+\cvtag{TravisCI}
+\cvtag{CircleCI}
+\cvtag{AWS Cloudformation}
+
+\vspace{10pt}
+\cvsubsection{Other tools}
+\cvtag{ElasticSearch}
+\cvtag{Jira/Confluence}
+\cvtag{\LaTeX}
+
+\medskip
+
+\cvsection{Education}
+
+\cvevent{B.Tech in Computer Science}{SRK University}{}{}
+
+\cvsection{Open Source}
+
+\cvevent{\href{https://github.com/commutatus/spotlight-search}{Spotlight Search}}{}{}{}
+
+\cvsection{Achievements}
+
+\cvachievement{\faTrophy}{C Coding}{2nd prize} Laqshya tech fest, Naipunya Institute of Management and Information Technology, Thrissur, Kerala, India
+
+\divider
+
+\cvachievement{\faTrophy}{Shell Scripting}{1st prize} Conjura tech fest, TKM College of Engineering, Kollam, Kerala, India
+
+\cvsection{Talks \& Workshops}
+
+\cvevent{Why side projects fail?}{Commutatus}{June 2019}{Chennai}
+
+\divider
+
+\cvevent{Why side projects fail?}{Foofys Solutions}{May 2016}{Bangalore}
+
+\divider
+
+\cvevent{Git Version Control System}{Palakkad Institute of Science and Technology}{August 2014}{Palakkad}
+
+% \cvsection{Referees}
+
+% % \cvref{name}{email}{mailing address}
+% \cvref{Prof.\ Alpha Beta}{Institute}{a.beta@university.edu}
+% {Address Line 1\\Address line 2}
+
+% \divider
+
+% \cvref{Prof.\ Gamma Delta}{Institute}{g.delta@university.edu}
+% {Address Line 1\\Address line 2}
+
+% \cvsection{My Life Philosophy}
+
+% \begin{quote}
+% ``Something smart or heartfelt, preferably in one sentence.''
+% \end{quote}
+
+% \cvsection{Most Proud of}
+
+% \cvachievement{\faTrophy}{Fantastic Achievement}{and some details about it}
+
+% \divider
+
+% \cvachievement{\faHeartbeat}{Another achievement}{more details about it of course}
+
+% \divider
+
+% \cvachievement{\faHeartbeat}{Another achievement}{more details about it of course}
+
+% \cvsection{Strengths}
+
+% % Don't overuse these \cvtag boxes — they're just eye-candies and not essential. If something doesn't fit on a single line, it probably works better as part of an itemized list (probably inlined itemized list), or just as a comma-separated list of strengths.
+
+% % The `ragged2e` document class option might cause automatic linebreaks between \cvtag to fail.
+% % Either remove the ragged2e option; or 
+% % add \LaTeXraggedright in the paragraph for these \cvtag
+% {\LaTeXraggedright
+% \cvtag{Hard-working}
+% \cvtag{Eye for detail}
+% \cvtag{Motivator \& Leader}
+% \par}
+
+% \divider\smallskip
+
+% %% ...Or manually add linebreaks yourself
+% \cvtag{C++}
+% \cvtag{Embedded Systems}\\
+% \cvtag{Statistical Analysis}
+
+\cvsection{Languages}
+
+\cvskill{English}{5}
+\divider
+
+\cvskill{Malayalam}{5}
+\divider
+
+\cvskill{Hindi}{4} 
+\divider
+
+\cvskill{Tamil}{3}
+
+%% Supports X.5 values.
+
+%% Yeah I didn't spend too much time making all the
+%% spacing consistent... sorry. Use \smallskip, \medskip,
+%% \bigskip, \vspace etc to make adjustments.
+
+\end{paracol}
+
+
+\end{document}
